@@ -9,6 +9,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.lang.Nullable;
 
 @Builder
 @Data
@@ -29,4 +30,7 @@ public class Person {
 	@NotNull
     @Min(5)	
 	private int age;
+
+	@Nullable
+    private String emoji;
 }
